@@ -1,0 +1,6 @@
+1. npm init in ecommerce folder and set entry point as backend/server.js.
+2. npm i express mongoose dotenv.
+3. any name can be given to config.env. we downloaded dotenv so that server.js can understand that port number is written inside config.env file.
+4. write this in package.json
+    "start":"node backend/server.js",
+    "dev": "nodemon backend/server.js"
