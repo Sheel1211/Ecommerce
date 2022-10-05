@@ -11,3 +11,12 @@
 (2)unhandled promise rejection = to close the server on server crashing due to wrong url or anything.
 (3)catchasyncerrors= to handle errors like not passing name and its validator is set to required.
 (4)Uncaught Exception = e.g: console.log(youtube)  i.e we use it if we try to print variables that are not defined.
+
+7. bcrypt = used to encrypt user password
+   jsonwebtoken = to generate token
+   validator = to validate fields
+   nodemailer = link to be sent to send password or otp
+   cookie-parser = to store jsonwebtoken
+   body-parser = to send data.
+
+8. We cannot use this in arrow function.
