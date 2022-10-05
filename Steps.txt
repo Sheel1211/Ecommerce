@@ -4,3 +4,8 @@
 4. write this in package.json
     "start":"node backend/server.js",
     "dev": "nodemon backend/server.js"
+5. We used async handler to handle async errors.like our validation for name is required and if we dont give name then request goes into infinity loop so to stop it we use async handler.
+
+6. error handlers given:
+(1) Cast error = for giving wrong id
+(2)unhandled promise rejection = to close the server on server crashing.
