@@ -8,4 +8,6 @@
 
 6. error handlers given:
 (1) Cast error = for giving wrong id
-(2)unhandled promise rejection = to close the server on server crashing.
+(2)unhandled promise rejection = to close the server on server crashing due to wrong url or anything.
+(3)catchasyncerrors= to handle errors like not passing name and its validator is set to required.
+(4)Uncaught Exception = e.g: console.log(youtube)  i.e we use it if we try to print variables that are not defined.
