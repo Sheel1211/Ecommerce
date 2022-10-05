@@ -37,10 +37,19 @@ class ApiFeatures{
         //Filter for Price and Rating
         console.log(queryCopy);
 
-        this.query = this.query.find(queryCopy);
+        let queryStr=JSON.stringify(queryCopy);
+        queryStr=queryStr.replace(/\b(gt|gte|lt|lte)\b/g, (key) => `$${key}`);
+
+        console.log(queryStr);
+        this.query = this.query.find(JSON.parse(queryStr));
 
         return this;
     }
+    
+ 
+
+    
+
 }
 
 module.exports = ApiFeatures;
