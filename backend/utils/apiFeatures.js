@@ -1,5 +1,5 @@
 //query in the url means anything after ? 
-//for e.g: http://localhost:4000/api/v1/products?keyword=Samosa   so query=keyword=Samosa 
+//for e.g: http://localhost:4000/api/v1/products?keyword=Samosa   so query=>keyword=Samosa 
 class ApiFeatures{
     constructor(query,queryStr){
         this.query= query;
@@ -9,7 +9,7 @@ class ApiFeatures{
     //search feature for API
 
     search(){
-        const keyword=this.queryStr.keyword ?{
+        const keyword=this.queryStr.keyword ?{   // shows ternary operator
             name:{
                 $regex:this.queryStr.keyword, //using regex to provide search functionality
                 $options:"i", //case insensitive

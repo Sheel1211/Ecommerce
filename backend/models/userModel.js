@@ -59,6 +59,11 @@ userSchema.methods.getJWTToken = function(){
     });
 };
 
+//Compare Password
+userSchema.methods.comparePassword = async function(enteredPassword){
+    return await bcrypt.compare(enteredPassword, this.password);
+}
+
 module.exports = mongoose.model('User', userSchema);
 
-//process.env.JWT_SECRET = if any user gets this secret key then he/she can login and generate any number of tokens.
+//process.env.JWT_SECRET = if any user gets this secret key then he/she can login and generate any number of tokens i.e he can generate any numebr of admin in the system.
