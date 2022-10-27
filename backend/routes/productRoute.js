@@ -11,12 +11,12 @@ const router = express.Router();
 
 router.route("/products").get(getAllProducts);
 
-router.route("/products/new").post(isAuthenticatedUser,authorizedRoles("admin "),createProduct);
+router.route("/products/new").post(isAuthenticatedUser,authorizedRoles("admin"),createProduct);
 
 router
   .route("/products/:id")
-  .put(isAuthenticatedUser,authorizedRoles("admin "),updateProduct)
-  .delete(isAuthenticatedUser,authorizedRoles("admin "),deleteProduct)
+  .put(isAuthenticatedUser,authorizedRoles("admin"),updateProduct)
+  .delete(isAuthenticatedUser,authorizedRoles("admin"),deleteProduct)
   .get(getProductDetails);
 
 //Both update and delete included in one

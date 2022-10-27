@@ -64,7 +64,7 @@ const productSchema= new mongoose.Schema({
         }
     ],
 
-    user:{
+    user:{   //To check which admin with which userId created this product
         type:mongoose.Schema.ObjectId,
         ref:"User",
         required:true,
