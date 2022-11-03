@@ -17,8 +17,8 @@ router
   .route("/products/:id")
   .put(isAuthenticatedUser,authorizedRoles("admin"),updateProduct)
   .delete(isAuthenticatedUser,authorizedRoles("admin"),deleteProduct)
-  .get(getProductDetails);
-
+  
+router.route("/product/:id").get(getProductDetails);
 //Both update and delete included in one
 // router.route("/products/:id").put(deleteProduct);
 
