@@ -20,3 +20,18 @@
    body-parser = to send data.
 
 8. We cannot use this in arrow function.
+
+frontend:
+
+use npx create-react-app .   => to install react in the same folder of frontend.
+
+dependencies:
+axios=to fetch data from backend
+react-alert
+react-alert-template-basic
+react-helmet=>to give different title to different pages
+react-redux
+redux-thunk
+redux-devtools-extension
+react-router-dom
+overlay-navbar
